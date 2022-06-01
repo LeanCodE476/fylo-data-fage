@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #0c122c;
+  font-family: "Raleway", sans-serif;
+  background-image: url(images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 160rem;
+  background-position: center bottom;
+  height: 100vh;
+}
+
+main {
+  position: absolute;
+  bottom: 45%;
+  left: 20%;
+  width: 60%;
+  height: 20rem;
+  display: flex;
+  align-items: end;
+  min-width: 90rem;
+}
+main .container-left {
+  width: 60rem;
+  background-color: #1d2c67;
+  height: 100%;
+  border-radius: 1rem 11rem 1rem 1rem;
+}
+main .container-left .container-fylo {
+  margin: 3rem;
+  width: 50%;
+}
+main .container-left .container-fylo .container-folder {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+main .container-left .container-fylo .container-folder .container-box {
+  border-radius: 1rem;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  width: 5rem;
+  height: 5rem;
+  background-color: #0c122c;
+}
+main .container-right {
+  border-radius: 1rem;
+  margin-left: 3rem;
+  width: 100%;
+  height: 70%;
+  background-color: #1d2c67;
+}
+main .container-right .container-gb {
+  position: relative;
+  margin: 3rem;
+}
+main .container-right .container-gb .gb-rest {
+  position: absolute;
+  top: -10rem;
+  right: 0;
+  width: 20rem;
+  height: 8rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+main .container-right .container-gb .gb-rest::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 2.5rem;
+  right: 0;
+  transform: rotate(-90deg);
+  border-right: 4rem solid transparent;
+  border-top: 4rem solid transparent;
+  border-left: 4rem solid transparent;
+  border-bottom: 4rem solid white;
+}
+main .container-right .container-gb .gb-rest h1 {
+  line-height: 7rem;
+  text-align: center;
+  font-size: 4rem;
+}
+main .container-right .container-gb .gb-rest h1 span {
+  color: #848794;
+  font-size: 1.5rem;
+}
+main .container-right .container-gb p {
+  font-size: 1.5rem;
+  color: #dddbff;
+}
+main .container-right .container-gb p span {
+  font-weight: 700;
+}
+main .container-right .container-gb .bar-storage {
+  border: 0.2rem solid #1d2c67;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  height: 2.6rem;
+  background-color: #0c122c;
+  overflow: hidden;
+}
+main .container-right .container-gb .bar-storage .progres-bar {
+  border: 0.3rem solid #0c122c;
+  width: 70%;
+  background: #ffa399;
+  background: linear-gradient(90deg, #ffa399 25%, #ff4d97 63%);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-radius: 1rem;
+}
+main .container-right .container-gb .bar-storage .progres-bar .ball {
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: white;
+}
+main .container-right .container-gb .container-num-gb {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+main .container-right .container-gb .container-num-gb p {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 75rem) {
+  body {
+    background-color: #0c122c;
+    font-family: "Raleway", sans-serif;
+    background-image: url(images/bg-mobile.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  main {
+    margin: 15rem auto;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 20rem;
+  }
+  main .container-left {
+    width: 100%;
+  }
+  main .container-right {
+    margin-top: 2.5rem;
+    margin-left: 0;
+    padding-bottom: 3rem;
+  }
+  main .container-right .container-gb .gb-rest {
+    top: 11rem;
+    right: 20%;
+    left: 20%;
+    bottom: 20%;
+  }
+  main .container-right .container-gb .gb-rest::before {
+    display: none;
+  }
+  main .container-right .container-gb .gb-rest h1 {
+    line-height: 8rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
